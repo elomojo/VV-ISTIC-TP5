@@ -29,13 +29,11 @@ public class TestWiki {
 
     private WebDriver webDriver;
     private ArrayList<String> listVisitedUrls;
-    private String lastUrl;
     private String urlTovisit;
 
     @BeforeEach
     public void setUp(){
         listVisitedUrls = new ArrayList<String>();
-        lastUrl = "";
         urlTovisit = "";
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
